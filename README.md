@@ -77,6 +77,15 @@ This organization hosts forks and extensions of the Ribbit ecosystem:
 | [smr](https://github.com/Ribbit-Plus/smr) | SMR technology drive management torture test |
 | [turtle](https://github.com/Ribbit-Plus/turtle) | Fun with Turtle graphics |
 
+## Documentation
+
+| Document | Description |
+|----------|-------------|
+| [Architecture Overview](docs/architecture.md) | System design and signal flow |
+| [Protocol Specification](docs/protocol-spec.md) | Detailed protocol spec (reverse-engineered from source) |
+| [Getting Started](docs/getting-started.md) | Installation and usage guide |
+| [Roadmap](plan.md) | Missing ecosystem components and development roadmap |
+
 ## Learn More
 
 ### Presentations & Talks

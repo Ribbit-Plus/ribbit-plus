@@ -29,6 +29,9 @@ struct SpectrumView: View {
             .navigationTitle("Monitor")
             .navigationBarTitleDisplayMode(.large)
             .toolbarColorScheme(.dark, for: .navigationBar)
+            .onChange(of: audioEngine.isReceiving) { _, newValue in
+                if !newValue { isMonitoring = false }
+            }
         }
     }
 
@@ -140,11 +143,12 @@ struct SpectrumView: View {
         HStack(spacing: 16) {
             Button {
                 withAnimation(.spring) {
-                    isMonitoring.toggle()
                     if isMonitoring {
-                        audioEngine.startReceiving()
-                    } else {
+                        isMonitoring = false
                         audioEngine.stopReceiving()
+                    } else {
+                        audioEngine.startReceiving()
+                        isMonitoring = true
                     }
                 }
             } label: {

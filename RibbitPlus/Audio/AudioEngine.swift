@@ -52,13 +52,31 @@ class AudioEngine: ObservableObject {
     func startReceiving() {
         guard !isReceiving else { return }
         isReceiving = true
-        setupAudioInput()
+
+        Task {
+            let granted = await requestMicrophonePermission()
+            guard granted else {
+                print("Microphone permission denied")
+                isReceiving = false
+                return
+            }
+            setupAudioInput()
+        }
     }
 
     func stopReceiving() {
         isReceiving = false
+        audioEngine?.inputNode.removeTap(onBus: 0)
         audioEngine?.stop()
         audioEngine = nil
+    }
+
+    private func requestMicrophonePermission() async -> Bool {
+        await withCheckedContinuation { continuation in
+            AVAudioApplication.requestRecordPermission { granted in
+                continuation.resume(returning: granted)
+            }
+        }
     }
 
     // MARK: - OFDM Signal Generation
@@ -151,9 +169,26 @@ class AudioEngine: ObservableObject {
     // MARK: - Audio Input
 
     private func setupAudioInput() {
+        do {
+            let session = AVAudioSession.sharedInstance()
+            try session.setCategory(.playAndRecord, mode: .default, options: [.defaultToSpeaker])
+            try session.setActive(true)
+        } catch {
+            print("Audio session error: \(error)")
+            isReceiving = false
+            return
+        }
+
         let engine = AVAudioEngine()
         let inputNode = engine.inputNode
         let format = inputNode.outputFormat(forBus: 0)
+
+        // Guard against invalid format (e.g. 0 channels in simulator)
+        guard format.channelCount > 0, format.sampleRate > 0 else {
+            print("Audio input format invalid: \(format)")
+            isReceiving = false
+            return
+        }
 
         inputNode.installTap(onBus: 0, bufferSize: 2048, format: format) { [weak self] buffer, _ in
             Task { @MainActor [weak self] in
@@ -166,6 +201,7 @@ class AudioEngine: ObservableObject {
             audioEngine = engine
         } catch {
             print("Audio input error: \(error)")
+            inputNode.removeTap(onBus: 0)
             isReceiving = false
         }
     }

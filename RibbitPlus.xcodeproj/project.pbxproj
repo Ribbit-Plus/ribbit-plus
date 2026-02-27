@@ -1,0 +1,362 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8AF43719015431CB3CA95C9 /* RibbitPlusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB678F13BD411CB883200B /* RibbitPlusApp.swift */; };
+		2FE9B05AFC674BF89D3BC9BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD58545F60E4253A267DE53 /* ContentView.swift */; };
+		331451073537439788C2C578 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE15EBFCBD4C4BADAAA45794 /* Theme.swift */; };
+		41AB6881E135429FB7135A43 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C691516C8E47E692682A81 /* Message.swift */; };
+		C2E8090AD20B4BB0AA12B890 /* MessageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824A2DFB174645ECB31AC63A /* MessageStore.swift */; };
+		FA6CA44973DA457C80298143 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8438BF92C9249D3B1E104CA /* AudioEngine.swift */; };
+		00E338B5D13D42C2BE7D332E /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85D3666926146CBA46E137A /* SplashView.swift */; };
+		8F66171E166B40FF9615C121 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F2040FD3294E57B3AE3B62 /* MessagesView.swift */; };
+		C82604097C31459784C1B048 /* ComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E39033B42443378368A3A4 /* ComposeView.swift */; };
+		4E1E86B1B9AC46ADA288D605 /* SpectrumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92924B6B145A4BF891CD5A70 /* SpectrumView.swift */; };
+		5BDC63C98A444276AF5CB17D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A41CA95ABC740F0818427A1 /* SettingsView.swift */; };
+		FD2222A7A90E47C480CEF169 /* WaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7C9781B6DD48A7AC31685E /* WaveformView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FFAB678F13BD411CB883200B /* RibbitPlusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RibbitPlusApp.swift"; sourceTree = "<group>"; };
+		5DD58545F60E4253A267DE53 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView.swift"; sourceTree = "<group>"; };
+		BE15EBFCBD4C4BADAAA45794 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Theme.swift"; sourceTree = "<group>"; };
+		D6C691516C8E47E692682A81 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Message.swift"; sourceTree = "<group>"; };
+		824A2DFB174645ECB31AC63A /* MessageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MessageStore.swift"; sourceTree = "<group>"; };
+		C8438BF92C9249D3B1E104CA /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AudioEngine.swift"; sourceTree = "<group>"; };
+		B85D3666926146CBA46E137A /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SplashView.swift"; sourceTree = "<group>"; };
+		A3F2040FD3294E57B3AE3B62 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MessagesView.swift"; sourceTree = "<group>"; };
+		E6E39033B42443378368A3A4 /* ComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ComposeView.swift"; sourceTree = "<group>"; };
+		92924B6B145A4BF891CD5A70 /* SpectrumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SpectrumView.swift"; sourceTree = "<group>"; };
+		4A41CA95ABC740F0818427A1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsView.swift"; sourceTree = "<group>"; };
+		DC7C9781B6DD48A7AC31685E /* WaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WaveformView.swift"; sourceTree = "<group>"; };
+		22537AF67ABF42228FBE8271 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets.xcassets"; sourceTree = "<group>"; };
+		1BEDC7E1829C4921A419B50B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		95C47B9A7EBD443F9A107EA2 /* RibbitPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RibbitPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2521C6DEFD14E5286333A43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		278ACF0896484CDC8233FC4D = {
+			isa = PBXGroup;
+			children = (
+				21851CA1D99147E8BFD5D14A /* RibbitPlus */,
+				FF79F6A3F71B4DAA8C35A352 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF79F6A3F71B4DAA8C35A352 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95C47B9A7EBD443F9A107EA2 /* RibbitPlus.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21851CA1D99147E8BFD5D14A /* RibbitPlus */ = {
+			isa = PBXGroup;
+			children = (
+				FFAB678F13BD411CB883200B /* RibbitPlusApp.swift */,
+				5DD58545F60E4253A267DE53 /* ContentView.swift */,
+				D091C481CCD7445F8C3740F1 /* Views */,
+				2B387B7FA2594396B95D2C74 /* Models */,
+				2BA791E28A494B8599A4C28E /* Audio */,
+				BEEC796F9165427E8557E687 /* Theme */,
+				22537AF67ABF42228FBE8271 /* Assets.xcassets */,
+				CB8AFDB43DA948E4BF5806B9 /* Preview Content */,
+			);
+			path = RibbitPlus;
+			sourceTree = "<group>";
+		};
+		D091C481CCD7445F8C3740F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B85D3666926146CBA46E137A /* SplashView.swift */,
+				A3F2040FD3294E57B3AE3B62 /* MessagesView.swift */,
+				E6E39033B42443378368A3A4 /* ComposeView.swift */,
+				92924B6B145A4BF891CD5A70 /* SpectrumView.swift */,
+				4A41CA95ABC740F0818427A1 /* SettingsView.swift */,
+				24044AECA7FC421B833A2722 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		24044AECA7FC421B833A2722 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DC7C9781B6DD48A7AC31685E /* WaveformView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2B387B7FA2594396B95D2C74 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D6C691516C8E47E692682A81 /* Message.swift */,
+				824A2DFB174645ECB31AC63A /* MessageStore.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2BA791E28A494B8599A4C28E /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				C8438BF92C9249D3B1E104CA /* AudioEngine.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		BEEC796F9165427E8557E687 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				BE15EBFCBD4C4BADAAA45794 /* Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		CB8AFDB43DA948E4BF5806B9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1BEDC7E1829C4921A419B50B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0CD7AADFD914E45BB80D436 /* RibbitPlus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69811AB4EEB54CCF9255EBDD;
+			buildPhases = (
+				3F5D9DCEC0A94B0E9DF6A16C /* Sources */,
+				B2521C6DEFD14E5286333A43 /* Frameworks */,
+				72E3C8FECC644A97A118F4F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RibbitPlus;
+			productName = RibbitPlus;
+			productReference = 95C47B9A7EBD443F9A107EA2;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		169775C7A2CC45F4B9E0F6B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					E0CD7AADFD914E45BB80D436 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = D08024348336471FB27C54AD;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 278ACF0896484CDC8233FC4D;
+			productRefGroup = FF79F6A3F71B4DAA8C35A352;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0CD7AADFD914E45BB80D436 /* RibbitPlus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72E3C8FECC644A97A118F4F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F5D9DCEC0A94B0E9DF6A16C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8AF43719015431CB3CA95C9 /* RibbitPlusApp.swift in Sources */,
+				2FE9B05AFC674BF89D3BC9BE /* ContentView.swift in Sources */,
+				331451073537439788C2C578 /* Theme.swift in Sources */,
+				41AB6881E135429FB7135A43 /* Message.swift in Sources */,
+				C2E8090AD20B4BB0AA12B890 /* MessageStore.swift in Sources */,
+				FA6CA44973DA457C80298143 /* AudioEngine.swift in Sources */,
+				00E338B5D13D42C2BE7D332E /* SplashView.swift in Sources */,
+				8F66171E166B40FF9615C121 /* MessagesView.swift in Sources */,
+				C82604097C31459784C1B048 /* ComposeView.swift in Sources */,
+				4E1E86B1B9AC46ADA288D605 /* SpectrumView.swift in Sources */,
+				5BDC63C98A444276AF5CB17D /* SettingsView.swift in Sources */,
+				FD2222A7A90E47C480CEF169 /* WaveformView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B357232FD196405888B8879C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9938423142C24712960532B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB9F9F8D5D9A4AC1A87C9BDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RibbitPlus/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ribbit+";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Ribbit+ needs microphone access to receive digital radio messages via audio.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.openresearch.ribbitplus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		635109A2AF12437A8E5B3A36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RibbitPlus/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ribbit+";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Ribbit+ needs microphone access to receive digital radio messages via audio.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.openresearch.ribbitplus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D08024348336471FB27C54AD /* Build configuration list for PBXProject "RibbitPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B357232FD196405888B8879C /* Debug */,
+				9938423142C24712960532B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69811AB4EEB54CCF9255EBDD /* Build configuration list for PBXNativeTarget "RibbitPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB9F9F8D5D9A4AC1A87C9BDB /* Debug */,
+				635109A2AF12437A8E5B3A36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 169775C7A2CC45F4B9E0F6B4;
+}

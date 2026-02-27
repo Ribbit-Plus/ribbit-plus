@@ -1,0 +1,1 @@
+# Xcode\n*.xcuserdata/\nDerivedData/\n*.xcworkspace/xcuserdata/\nbuild/\n*.moved-aside\n*.pbxuser\n*.mode1v3\n*.mode2v3\n*.perspectivev3\n*.hmap\n*.ipa\n*.dSYM.zip\n*.dSYM\n.DS_Store
